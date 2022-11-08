@@ -32,6 +32,9 @@
                                 <rect key="frame" x="143.5" y="126.5" width="258.5" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="beforeTaxPriceChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="RV0-4T-piS"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sales Tax Rate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oJk-ba-gmg">
                                 <rect key="frame" x="12" y="174" width="111" height="21"/>
@@ -43,6 +46,9 @@
                                 <rect key="frame" x="131" y="167.5" width="271" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="salesTaxRateChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="4ej-yZ-P5v"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="After Tax Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tUx-AK-e28">
                                 <rect key="frame" x="12" y="215" width="111" height="21"/>
@@ -59,6 +65,9 @@
                                 <rect key="frame" x="165" y="282.5" width="84.5" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Calculate"/>
+                                <connections>
+                                    <action selector="calcualteButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c48-RS-Zri"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -88,6 +97,9 @@
                             <constraint firstItem="ukL-Ow-cuH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uNa-rK-2ib"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="afterTaxPriceTextField" destination="gxL-3B-qUb" id="VkQ-oG-wmQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
